@@ -1,0 +1,25 @@
+{
+  "name": "lemonCount-front",
+  "version": "1.0.0",
+  "description": "lemonCount-front",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puerilexy/lemonCount-front.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/puerilexy/lemonCount-front/issues"
+  },
+  "homepage": "https://github.com/puerilexy/lemonCount-front#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-webserver": "^0.9.1"
+  }
+}
