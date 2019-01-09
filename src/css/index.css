@@ -1,0 +1,364 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline; }
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  font-family: arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+ins,
+a {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: inline-block; }
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "microsoft yahei"; }
+
+.none {
+  display: none; }
+
+.red {
+  color: #FF5053; }
+
+.green {
+  color: #00f512; }
+
+.gray {
+  color: gray; }
+
+.mui-icon {
+  font-size: 25px; }
+
+.mui-inner-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 135px;
+  background: #ffe344;
+  font-size: 18px;
+  padding: 2% 15px; }
+  .header .total p {
+    color: #000; }
+    .header .total p.pay-money {
+      font-weight: 700; }
+      .header .total p.pay-money b {
+        font-size: 40px;
+        line-height: 70px; }
+    .header .total p b.income-money {
+      font-weight: 700;
+      font-size: 20px;
+      margin: 0 5px; }
+  .header .date-wrap {
+    position: absolute;
+    top: 10px;
+    right: 5px; }
+    .header .date-wrap span {
+      display: inline-block;
+      padding: 3px 10px;
+      font-size: 14px;
+      border: 1px solid #000;
+      border-radius: 20px;
+      margin: 0 5px; }
+      .header .date-wrap span i {
+        font-size: 14px;
+        font-weight: 600; }
+
+.con-wrap {
+  width: 100%;
+  flex: 1;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column; }
+  .con-wrap .con-top {
+    width: 100%;
+    height: 54px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff; }
+    .con-wrap .con-top .con-top-table {
+      height: 34px;
+      border: 1px solid #8f8f94;
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex; }
+      .con-wrap .con-top .con-top-table span {
+        font-size: 16px;
+        flex: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 12px; }
+        .con-wrap .con-top .con-top-table span.nav-active {
+          color: #000;
+          background: #ffe344; }
+  .con-wrap .con-inner {
+    width: 100%;
+    flex: 1; }
+    .con-wrap .con-inner .bill-wrap, .con-wrap .con-inner .table-wrap, .con-wrap .con-inner .year-wrap, .con-wrap .con-inner .month-wrap {
+      width: 100%;
+      height: 100%; }
+      .con-wrap .con-inner .bill-wrap.mui-scroll-wrapper, .con-wrap .con-inner .table-wrap.mui-scroll-wrapper, .con-wrap .con-inner .year-wrap.mui-scroll-wrapper, .con-wrap .con-inner .month-wrap.mui-scroll-wrapper {
+        position: relative; }
+    .con-wrap .con-inner .month-wrap {
+      width: 100%;
+      height: auto; }
+      .con-wrap .con-inner .month-wrap .month-list-inner {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px; }
+        .con-wrap .con-inner .month-wrap .month-list-inner .month-list-title {
+          width: 100%;
+          height: 44px;
+          padding: 0 15px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 16px;
+          background: #fff; }
+        .con-wrap .con-inner .month-wrap .month-list-inner .month-list-con {
+          width: 100%;
+          height: auto; }
+    .con-wrap .con-inner .year-wrap {
+      width: 100%;
+      height: auto; }
+      .con-wrap .con-inner .year-wrap .year-list-title {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px; }
+        .con-wrap .con-inner .year-wrap .year-list-title p {
+          flex: 1;
+          text-align: center; }
+          .con-wrap .con-inner .year-wrap .year-list-title p span {
+            display: block; }
+          .con-wrap .con-inner .year-wrap .year-list-title p:first-child span {
+            display: inline;
+            color: #000; }
+      .con-wrap .con-inner .year-wrap .mui-table-view-cell.mui-collapse .mui-table-view {
+        margin: -11px -15px -11px -30px; }
+      .con-wrap .con-inner .year-wrap .mui-table-view-cell > a:not(.mui-btn) {
+        position: initial; }
+    .con-wrap .con-inner .bill-list {
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .con-wrap .con-inner .bill-list p {
+        font-size: 20px;
+        display: flex;
+        align-items: center; }
+        .con-wrap .con-inner .bill-list p span.do {
+          color: #000; }
+        .con-wrap .con-inner .bill-list p.money {
+          font-size: 25px;
+          font-weight: 700; }
+      .con-wrap .con-inner .bill-list span.mui-icon {
+        background: #ffe344;
+        border-radius: 50%;
+        font-size: 35px;
+        padding: 5px;
+        color: #000;
+        margin-right: 15px; }
+
+.aside {
+  background: #fff; }
+  .aside .aside-title {
+    width: 100%;
+    font-size: 22px;
+    margin: 15px 0 0 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center; }
+    .aside .aside-title span {
+      display: inline-block;
+      width: 3px;
+      height: 25px;
+      background: #ffe344;
+      margin-right: 15px; }
+  .aside .aside-con {
+    width: 100%;
+    padding-left: 15px; }
+    .aside .aside-con .aside-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 30px; }
+      .aside .aside-con .aside-list li {
+        font-size: 16px;
+        color: gray;
+        border: 1px solid gray;
+        border-radius: 50px;
+        padding: 3px 12px;
+        margin: 15px 10px 0 0; }
