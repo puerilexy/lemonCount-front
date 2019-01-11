@@ -1,8 +1,8 @@
-@import "_mixin.scss";
-@import "common.scss";
-
 *{
-	@include sizing;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
 	font-family: "microsoft yahei";
 }
 
@@ -35,7 +35,6 @@
 .header{
 	position: relative;
 	width: 100%;
-	height: 135px;
 	background: #ffe344;
 	font-size: 18px;
 	padding: 2% 15px;
@@ -77,9 +76,9 @@
 .con-wrap{
 	width: 100%;
 	flex: 1;
-	padding-bottom: 50px;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 50px;
 	.con-top{
 		width: 100%;
 		height: 54px;
@@ -236,5 +235,22 @@
 				margin: 15px 10px 0 0;
 			}
 		}
+	}
+}
+
+.go-add{
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+	z-index: 9;
+	border-radius: 50%;
+	overflow: hidden;
+	transform: translateX(-50%);
+	span.mui-icon{
+		font-size: 60px;
+		font-weight: 900;
+		background: #ffe344;
+		border-radius: 50%;
+		color: #fff;
 	}
 }

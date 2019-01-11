@@ -17,7 +17,8 @@ require(['./js/config.js'], function() {
 			_selectDate = dom('.select-date'),
 			_textStatus = dom('.text-status'),
 			_textDate = dom('.text-date'),
-			_conTable = dom('.con-top-table');
+			_conTable = dom('.con-top-table'),
+			_goAddBill = dom('.go-add');
 			
 
 		function initScroll() {
@@ -45,9 +46,7 @@ require(['./js/config.js'], function() {
 			dtPicker = new mui.DtPicker({
 				type: 'month'
 			});
-			
-			var dtp = dom('.mui-dtpicker');
-			dtp.style.bottom = '-10px';
+
 		}
 
 		function addEvent() {
@@ -69,13 +68,13 @@ require(['./js/config.js'], function() {
 
 						_textDate.innerHTML = curYear + '-' + curMonth;
 						
-						//选择列表
+						// 选择列表的显示隐藏
 						_monthH5.style.display = 'inline-block';
 						_mPicker.style.display = 'block';
 						_yearH5.style.width = '50%';
 						_yPicker.style.width = '50%';
 						
-						// 账单
+						// 账单的显示隐藏
 						_mWrap.style.display = 'block';
 						_yWrap.style.display = 'none';
 						
@@ -83,13 +82,13 @@ require(['./js/config.js'], function() {
 
 						_textDate.innerHTML = curYear;
 						
-						//选择列表
+						// 选择列表的显示隐藏
 						_monthH5.style.display = 'none';
 						_mPicker.style.display = 'none';
 						_yearH5.style.width = '100%';
 						_yPicker.style.width = '100%';
 						
-						// 账单
+						// 账单的显示隐藏
 						_mWrap.style.display = 'none';
 						_yWrap.style.display = 'block';
 					}
@@ -104,6 +103,10 @@ require(['./js/config.js'], function() {
 						_textDate.innerHTML = selectItems.y.text
 					}
 				})
+			})
+			//点击显示侧滑导航
+			dom('.show-aside').addEventListener('tap',function(){
+				mui('.mui-off-canvas-wrap').offCanvas('show');
 			})
 			//点击账单、图表table切换
 			mui('.con-top-table').on('tap','.table-btn',function(){
@@ -125,6 +128,10 @@ require(['./js/config.js'], function() {
 					_tableWrap.style.display = 'block';
 				}
 					
+			})
+			//点击跳转到添加账单页面
+			_goAddBill.addEventListener('tap',function(){
+				location.href = '../../page/add_bill.html';
 			})
 		}
 
